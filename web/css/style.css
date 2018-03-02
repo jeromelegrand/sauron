@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'aniron';
+    src: url("../fonts/aniron.ttf");
+}
+@font-face {
+    font-family: 'aniron-bold';
+    src: url("../fonts/aniron-bold.ttf");
+}
+@font-face {
+    font-family: 'tengwar';
+    src: url("../fonts/tengwar.ttf");
+}
+@font-face {
+    font-family: 'partybusiness';
+    src: url("../fonts/partybusiness.ttf");
+}
+
+body {
+    font-family: 'aniron';
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+blockquote {
+    border: none;
+}
+
+cite {
+    display: block;
+    text-decoration: underline;
+}
+
+#navbar {
+    font-family: 'aniron-bold';
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.active>a,
+ .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: #ff5f01;
+}
+
+.navbar-default {
+    background-color: #ff5f01;
+    border-color: #ff5f01;
+}
+
+.tengwar {
+    font-family: 'tengwar';
+    color: #ff5101;
+}
+
+.navbar-default .navbar-nav>.active>a>div {
+    border-bottom: 2px solid white;
+}
+
+.carousel-caption-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .border-right {
+        border-right: 2px solid white;
+    }
+}
+
+.nav-pills>li>a {
+    color: grey;
+}
+
+.nav-pills>li.active>a {
+    color: #ff5f01;
+    background-color: white;
+    border-bottom: 2px solid #ff5f01;
+}
+.nav-pills>li.active>a:before, .nav-pills>li.active>a:after {
+    content: 'Ij';
+    font-family: 'tengwar'
+}
+
+.nav-pills>li>a:hover {
+    background-color: #ff5f01;
+}
+
+.nav-pills>li.active>a:hover {
+    background-color: grey;
+}
+
+.nav-pills>li.active>a:focus {
+    background-color: white;
+    color: #ff5101;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.margin-around {
+    margin: 20px 0px;
+}
+
+
+
+/*  --- les fellows --- */
+
+.fellow {
+	width: calc(5vw * 4);
+	height: auto;
+}
+
+.fellow img {
+	width: 100%;
+	opacity: 0.8;
+	transition: .3s ease-in-out;
+}
+
+.fellow:hover img {
+	opacity: 1;
+	transition: .3s ease-in-out;
+}
+
+.fellow figcaption {
+	height: calc(5vw * 4 * 1.144);
+}
+
+.reward {
+	height: calc(5vw * 4 * 1.144);
+	position: relative;
+	top: calc(5vw * 4 * 1.144 * -1 - 4px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.reward p {
+	padding: 5%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+}
+
+.reward p span {
+	color: #ff5f01;
+}
+
+.reward h3 {
+	font-size: 1.6em;
+	color: white;
+}
+
+.fellow:hover .reward > p {
+	display: none;
+	transition: .3s ease-in-out;
+}
+
+.fellow:hover .reward > h3 {
+	position: relative;
+	top: 40%;
+	font-size: 1em;
+	transition: .3s ease-in-out;
+}
+
+.description {
+	position: relative;
+	top: calc(5vw * 4 * 1.144 * -1 - 4px);
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 5%;
+}
+
+p.dead {
+    background-color: unset;
+    font-size: 1.6em;
+}
+/*  --- les fellows fin --- */
+
+.bg-dark {
+    background-color: black;
+    color: white;
+}
+
+.margin-side {
+    margin: 0 20px;
+}
+
+.margin-both {
+    margin: 20px;
+}
+
+.btn-white-orange {
+    color: #ff5f01;
+    background-color: white;
+    border-radius: unset;
+    transform: skewX(-20deg);
+}
+
+.border-orange {
+    width: 50vw;
+    border: 2px solid #ff5f01;
+    transform: skewX(-35deg);
+}
+
+.btn-hunter {
+    color: #ff5f01;
+    background-color: black;
+    border-radius: unset;
+    transform: skewX(-20deg);
+}
+
+.font-hunter {
+    font-size: 1.8em;
+}
+
+.panel-orange {
+    border: unset;
+    border-bottom: 3px solid #ff5f01;
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+.panel-orange > .panel-heading {
+    background-color: #ff5f01;
+    border: unset;
+}
+
+.panel-orange > .panel-body {
+    color: black;
+}
+
+.panel.panel-orange table.table {
+    color: grey;
+    border-top: unset;
+}
+
+.panel-orange .table > thead {
+    color: black;
+}
+
+.panel-orange .table th {
+    border-bottom: 2px solid black;
+}
+
+.table-padding {
+    padding: 10px 20px;
+}
+
+.text-orange {
+    color: #ff5f01;;
+}
+
+.btn-orange-dark {
+    background-color: black;
+    color: #ff5f01;
+    transform: skewX(-20deg);
+    border-radius: unset;
+    box-shadow: 10px 10px 10px 0px #656565;
+}
+
+.d-none {
+    display: none;
+}
+
+.bg-orange {
+    background-color: #ff5f01;
+}
+
+footer {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer ul li {
+    margin: 5px;
+}
